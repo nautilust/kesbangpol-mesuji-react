@@ -1,7 +1,5 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
-// import { Provider } from "react-redux";
-// import { store } from "./redux/Store";
 import HeaderLogo from "./components/HeaderLogo";
 import NavBarMenu from "./components/NavBarMenu";
 import FooterSection from "./components/FooterSection";
@@ -20,7 +18,6 @@ import {
 export default function App() {
   return (
     <>
-      {/* <Provider store={store}> */}
       <HeaderLogo />
       <Router>
         <NavBarMenu />
@@ -57,7 +54,6 @@ export default function App() {
         </div>
       </Router>
       <FooterSection />
-      {/* </Provider> */}
     </>
   );
 }
